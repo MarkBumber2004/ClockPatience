@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using ClockPatience.Controllers;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Start the game controller
+        GameController.Instance.Start(); //still needs to be implemented
+    }
+}

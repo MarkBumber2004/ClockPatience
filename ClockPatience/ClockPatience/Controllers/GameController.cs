@@ -16,5 +16,20 @@ namespace ClockPatience.Controllers
             view = new View();
             game = new Game();
         }
+        
+        // Public property to get the singleton instance
+        public static GameController Instance => instance;
+
+        // Method to start the game
+        public void Start()
+        {
+            view.DisplayWelcome();
+            string line;
+
+            // Loop to get user input until '#' is entered
+            while ((line = view.GetUserInput()) != "#")
+            {
+            }
+        }
     }
 }
